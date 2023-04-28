@@ -5,62 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Taylor Lawson, Portfolio</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat:wght@400;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <main>
-      <!-- ABOUT / PROFILE -->
+      <!-- HEADER -->
       <header>
-        <div class="content-wrap">
+        <div class="content-wrap header-content">
           <h1>Taylor Lawson</h1>
-          <h2>Junior Software/Web Developer</h2>
-
-          <p>
-            Placeholder text. Add more paragraphs or links as needed. Here is
-            some dummy text: Lorem ipsum dolor sit amet, consectetur adipiscing
-            elit. Praesent bibendum, diam ut gravida efficitur, risus neque
-            scelerisque erat, ut rhoncus erat odio ac justo. Nunc scelerisque
-            vestibulum augue, sit amet hendrerit ante.
-          </p>
+          <h2>Full Stack Developer</h2>
         </div>
       </header>
 
-      <!-- PROJECTS / PORTFOLIO -->
-      <section class="projects">
-        <div class="content-wrap divider">
-          <h2>Featured Projects</h2>
+      <!-- ABOUT -->
+      <section class="about">
+        <div class="content-wrap">
+          <h2>About Me</h2>
           <p>
-            View selected projects below. More information can be found at
-            <a href="#">[placeholder.com]</a>.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
           </p>
-
-          <!-- Project 1 -->
-          <section class="project-item">
-            <img src="images/thumbnail-1.jpg" alt="description of image" />
-            <h3>Project Name</h3>
-            <p>
-              Summary or description of the project and/or your role in it. Add
-              as many paragraphs as you need.
-            </p>
-            <a class="btn" href="#" target="_blank"
-              >View project / case study</a
-            >
-          </section>
-          <!-- Project 2 -->
-          <section class="project-item">
-            <img src="images/thumbnail-2.jpg" alt="description of image" />
-            <h3>Project Name</h3>
-            <p>
-              Summary or description of the project and/or your role in it. Add
-              as many paragraphs as you need.
-            </p>
-            <a class="btn" href="#" target="_blank"
-              >View project / case study</a
-            >
-          </section>
+          <h3>Languages I've Worked With:</h3>
+          <ul>
+            <li>Python</li>
+            <li>JavaScript</li>
+          </ul>
         </div>
       </section>
 
@@ -76,38 +53,85 @@
           <!-- Job 1 -->
           <section class="job-item">
             <div class="job-details">
-              <h3>Job title</h3>
-              <p>Company Name</p>
-              <p>Date at job</p>
+              <h3>TV/Film Grip</h3>
+              <p>Freelance</p>
+              <p>2015-2022</p>
             </div>
             <div class="job-summary">
-              <p>Job summary goes here. Add as many paragraphs as you need.</p>
-              <p>Optional list:</p>
+              <p>
+                7 years of experience working on set as a grip on various films
+                and TV shows.
+              </p>
+              <p>Notable Film Credits:</p>
               <ul>
-                <li>Delete this list if you don't need it.</li>
-                <li>Created...</li>
-                <li>Lead...</li>
-                <li>Responsible for...</li>
+                <li>Significant Other - <i>Paramount+</i> (2022)</li>
+                <li>Showing Up - <i>A24</i> (2021)</li>
+                <li>Timmy Failure - <i>Disney+</i> (2018)</li>
+                <li>Grimm - <i>NBC</i> (2015-2017)</li>
               </ul>
             </div>
           </section>
-          <!-- Job 2 -->
-          <section class="job-item">
-            <div class="job-details">
-              <h3>Job title</h3>
-              <p>Company Name</p>
-              <p>Date at job</p>
-            </div>
-            <div class="job-summary">
-              <p>Job summary goes here. Add as many paragraphs as you need.</p>
-              <p>Optional list:</p>
-              <ul>
-                <li>Delete this list if you don't need it.</li>
-                <li>Created...</li>
-                <li>Lead...</li>
-                <li>Responsible for...</li>
-              </ul>
-            </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS / PORTFOLIO -->
+      <section class="projects">
+        <div class="content-wrap divider">
+          <h2>Featured Projects</h2>
+          <p>Some projects I've worked on recently.</p>
+
+          <!-- Project 1 -->
+          <section class="project-item">
+            <img
+              src="images/project-IdleClicker.png"
+              alt="various buttons with options to save game, load save data, and buy buildings"
+            />
+            <h3>IdleClicker</h3>
+            <p>
+              Currently a work in progress. This web-based incremental clicker
+              game is centered around buying buildings to accumulate points in
+              order to buy the more buildings, rinse and repeat. This game also
+              features a save/load mechanic and allowing the user to copy their
+              save data.
+            </p>
+            <ul>
+              <li>JavaScript</li>
+              <li>Python</li>
+              <li>Flask</li>
+              <li>Replit</li>
+            </ul>
+            <a
+              class="btn"
+              href="https://replit.com/@TypicalT/IdleClicker?v=1"
+              target="_blank"
+            >
+              View project
+            </a>
+          </section>
+          <!-- Project 2 -->
+          <section class="project-item">
+            <img
+              src="images/project-Calculator.png"
+              alt="a basic calculator with 12 buttons"
+            />
+            <h3>Tkinter Calculator</h3>
+            <p>
+              This is a fully functional calculator created with tkinter in
+              python which allows the use of addition, subtraction,
+              multiplication and division. It also features a "clear all"
+              button.
+            </p>
+            <ul>
+              <li>Python</li>
+              <li>Tkinter</li>
+              <li>Replit</li>
+            </ul>
+            <a
+              class="btn"
+              href="https://replit.com/@TypicalT/Calculator-Day66100?v=1"
+              target="_blank"
+              >View project</a
+            >
           </section>
         </div>
       </section>
@@ -117,7 +141,18 @@
         <div class="content-wrap item-details">
           <h2>Education</h2>
 
-          <!-- Copy this whole <section> block to add more schools. -->
+          <!-- Certifications -->
+          <section>
+            <h3>Certifications</h3>
+            <p>Acquired via LinkedIn Learning</p>
+            <ul>
+              <li>JavaScript</li>
+              <li>Python</li>
+              <li>CSS</li>
+              <li>HTML</li>
+            </ul>
+          </section>
+          <!-- School -->
           <section>
             <h3>School name - City</h3>
             <p>Designation received or program name, year attended</p>
@@ -133,15 +168,21 @@
 
           <!-- Social media and contact links. Add or remove any networks. -->
           <ul class="contact-list">
-            <li><a href="mailto:email@example.com">email@example.com</a></li>
             <li>
-              <a href="http://yourwebsite.com" target="_blank"
-                >yourwebsite.com</a
-              >
+              <a href="mailto:taylor.lawson303+business@gmail.com">Email </a>
             </li>
-            <li><a href="#" target="_blank">Twitter</a></li>
-            <li><a href="#" target="_blank">LinkedIn</a></li>
-            <li><a href="#" target="_blank">Facebook</a></li>
+            <li>
+              <a href="https://twitter.com/imTypicalT" target="_blank"
+                >Twitter
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/taylor-lawson-873991189/"
+                target="_blank"
+                >LinkedIn
+              </a>
+            </li>
           </ul>
         </div>
       </footer>

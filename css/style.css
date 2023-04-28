@@ -43,8 +43,8 @@ h2 {
 }
 h1,
 h2 {
-  font-family: "Caveat", cursive;
-  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
   margin: 0;
 }
 .content-wrap {
@@ -70,17 +70,28 @@ h3 {
   border-bottom: none;
 }
 
-/* Profile
+/*------------------------ 
+Profile
 ------------------------*/
 header {
-  background: #2f3061;
+  background: #aaaaaa;
   color: #f7fff7;
+  height: 500px;
+  background-image: url(../images/studio-4-transparent.png);
+  background-size: 900px;
+  background-repeat: no-repeat;
+  background-position: right -300px top;
+  background-attachment: scroll;
+}
+.header-content {
+  padding-top: 300px;
 }
 
-/* Projects
+/*------------------------
+Projects
 ------------------------*/
 .projects {
-  background: #f7fff7;
+  background: #cccccc;
 }
 .projects a {
   color: #2f3061;
@@ -103,17 +114,24 @@ header {
 .project-item h3 {
   margin-top: 0;
 }
+.project-item ul li {
+  display: inline;
+  padding-right: 10px;
+}
 
-/* Work Experience
+/*------------------------
+Work Experience
 ------------------------*/
 .work-experience {
   background: #a1c6d7;
 }
 
-/* Education
+/*------------------------
+Education
 ------------------------*/
 .education {
-  background-image: url(../images/joanna-kosinska-unsplash.jpg);
+  /* background-image: url(../images/joanna-kosinska-unsplash.jpg); */
+  background-color: #dbbb51;
   background-size: cover;
   background-position: top right;
   padding-bottom: 100px;
@@ -122,7 +140,8 @@ header {
   width: 60%;
 }
 
-/* Contact Info
+/*------------------------
+Contact Info
 ------------------------*/
 footer {
   background: #343434;
@@ -137,10 +156,14 @@ footer {
   display: inline-block;
 }
 
-/* Responsive Styles
+/*------------------------
+Responsive Styles
 ------------------------*/
+/* Desktop View */
 @media screen and (min-width: 750px) {
-  header,
+  header {
+    text-align: left;
+  }
   footer {
     text-align: center;
   }
@@ -158,14 +181,36 @@ footer {
     justify-content: center;
   }
 }
-
+@media screen and (max-width: 1500px) {
+  header h1 {
+    width: 500px;
+  }
+  header {
+    height: auto;
+  }
+}
+/* Mobile View*/
 @media screen and (max-width: 749px) {
+  header {
+    height: 700px;
+    background-size: 650px;
+    background-position: top 20px left;
+    background-attachment: scroll;
+    /* background-clip: content-box; */
+  }
+  .header-content {
+    padding-top: 280px;
+  }
+  header h2 {
+    font-size: 30px;
+  }
   h1 {
     font-size: 75px;
     line-height: 0.9;
     margin-bottom: 20px;
   }
   h2 {
+    font-size: 35px;
     line-height: 1;
   }
   .contact-list a {
