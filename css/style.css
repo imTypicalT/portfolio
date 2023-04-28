@@ -185,9 +185,6 @@ Responsive Styles
   header h1 {
     width: 500px;
   }
-  header {
-    height: auto;
-  }
 }
 /* Mobile View*/
 @media screen and (max-width: 749px) {
