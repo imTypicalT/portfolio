@@ -76,7 +76,7 @@ Profile
 header {
   background: #aaaaaa;
   color: #f7fff7;
-  height: 500px;
+  height: auto;
   background-image: url(../images/studio-4-transparent.png);
   background-size: 900px;
   background-repeat: no-repeat;
@@ -192,7 +192,7 @@ Responsive Styles
 /* Mobile View*/
 @media screen and (max-width: 749px) {
   header {
-    height: 700px;
+    height: auto;
     background-size: 650px;
     background-position: top 20px left;
     background-attachment: scroll;
