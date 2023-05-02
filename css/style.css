@@ -127,17 +127,24 @@ Work Experience
 }
 
 /*------------------------
-Education
+Certifications
 ------------------------*/
-.education {
+.certifications {
   /* background-image: url(../images/joanna-kosinska-unsplash.jpg); */
   background-color: #dbbb51;
   background-size: cover;
   background-position: top right;
   padding-bottom: 100px;
 }
-.education p {
+.certifications p {
   width: 60%;
+  font-style: italic;
+}
+.certifications ul {
+  margin: 0px;
+}
+.certifications h3 {
+  margin-top: 10px;
 }
 
 /*------------------------
