@@ -10,157 +10,157 @@ COLOR PALETTE
 /* Global Styles
 ------------------------*/
 html {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 *,
 *:before,
 *:after {
-  box-sizing: inherit;
+    box-sizing: inherit;
 }
 body {
-  color: #343434;
-  margin: 0;
-  padding: 0;
-  font-family: "Montserrat", sans-serif;
-  font-size: 15px;
-  line-height: 1.5;
+    color: #343434;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
 }
 img {
-  width: 300px;
+    width: 300px;
 }
 a {
-  color: #ffe66d;
+    color: #ffe66d;
 }
 a:hover {
-  text-decoration: none;
+    text-decoration: none;
 }
 h1 {
-  font-size: 100px;
-  line-height: 1;
+    font-size: 100px;
+    line-height: 1;
 }
 h2 {
-  font-size: 45px;
+    font-size: 45px;
 }
 h1,
 h2 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    margin: 0;
 }
 .content-wrap {
-  max-width: 800px;
-  width: 85%;
-  margin: 0 auto;
-  padding: 60px 0;
+    max-width: 800px;
+    width: 85%;
+    margin: 0 auto;
+    padding: 60px 0;
 }
 h3 {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
 .item-details h3 + p {
-  font-style: italic;
+    font-style: italic;
 }
 .item-details h3 ~ p {
-  margin: 0;
+    margin: 0;
 }
 .divider > section {
-  border-bottom: 1px dashed #343434;
-  padding: 25px 0;
+    border-bottom: 1px dashed #343434;
+    padding: 25px 0;
 }
 .divider > section:last-of-type {
-  border-bottom: none;
+    border-bottom: none;
 }
 
 /*------------------------ 
 Profile
 ------------------------*/
 header {
-  background: #aaaaaa;
-  color: #f7fff7;
-  height: auto;
-  background-image: url(../images/studio-4-transparent.png);
-  background-size: 900px;
-  background-repeat: no-repeat;
-  background-position: right -300px top;
-  background-attachment: scroll;
+    background: #aaaaaa;
+    color: #f7fff7;
+    height: auto;
+    /* background-image: url(../images/studio-4-transparent.png); */
+    /* background-size: 900px; */
+    /* background-repeat: no-repeat; */
+    /* background-position: right -300px top; */
+    /* background-attachment: scroll; */
 }
 .header-content {
-  padding-top: 300px;
+    padding-top: 300px;
 }
 
 /*------------------------
 Projects
 ------------------------*/
 .projects {
-  background: #cccccc;
+    background: #ffffff;
 }
 .projects a {
-  color: #2f3061;
+    color: #2f3061;
 }
 .projects .btn {
-  color: #f7fff7;
-  background: #2f3061;
-  text-decoration: none;
-  padding: 8px;
-  border-radius: 4px;
-  display: inline-block;
+    color: #f7fff7;
+    background: #2f3061;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 4px;
+    display: inline-block;
 }
 .projects .btn:hover {
-  background: rgba(47, 48, 97, 80%);
+    background: rgba(47, 48, 97, 80%);
 }
 .project-item {
-  overflow: hidden;
+    overflow: hidden;
 }
 
 .project-item h3 {
-  margin-top: 0;
+    margin-top: 0;
 }
 .project-item ul li {
-  display: inline;
-  padding-right: 10px;
+    display: inline;
+    padding-right: 10px;
 }
 
 /*------------------------
 Work Experience
 ------------------------*/
 .work-experience {
-  background: #a1c6d7;
+    background: #dddddd;
 }
 
 /*------------------------
 Certifications
 ------------------------*/
 .certifications {
-  /* background-image: url(../images/joanna-kosinska-unsplash.jpg); */
-  background-color: #dbbb51;
-  background-size: cover;
-  background-position: top right;
-  padding-bottom: 100px;
+    /* background-image: url(../images/joanna-kosinska-unsplash.jpg); */
+    background-color: #dddddd;
+    background-size: cover;
+    background-position: top right;
+    padding-bottom: 100px;
 }
 .certifications p {
-  width: 60%;
-  font-style: italic;
+    width: 60%;
+    font-style: italic;
 }
 .certifications ul {
-  margin: 0px;
+    margin: 0px;
 }
 .certifications h3 {
-  margin-top: 10px;
+    margin-top: 10px;
 }
 
 /*------------------------
 Contact Info
 ------------------------*/
 footer {
-  background: #343434;
-  color: #f7fff7;
+    background: #343434;
+    color: #f7fff7;
 }
 .contact-list {
-  list-style-type: none;
-  padding: 0;
+    list-style-type: none;
+    padding: 0;
 }
 .contact-list a {
-  padding: 15px;
-  display: inline-block;
+    padding: 15px;
+    display: inline-block;
 }
 
 /*------------------------
@@ -168,56 +168,56 @@ Responsive Styles
 ------------------------*/
 /* Desktop View */
 @media screen and (min-width: 750px) {
-  header {
-    text-align: left;
-  }
-  footer {
-    text-align: center;
-  }
-  .project-item img {
-    float: left;
-    margin-right: 20px;
-  }
-  .job-item {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    column-gap: 20px;
-  }
-  .contact-list {
-    display: flex;
-    justify-content: center;
-  }
+    header {
+        text-align: left;
+    }
+    footer {
+        text-align: center;
+    }
+    .project-item img {
+        float: left;
+        margin-right: 20px;
+    }
+    .job-item {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 20px;
+    }
+    .contact-list {
+        display: flex;
+        justify-content: center;
+    }
 }
 @media screen and (max-width: 1500px) {
-  header h1 {
-    width: auto;
-  }
+    header h1 {
+        width: auto;
+    }
 }
 /* Mobile View*/
 @media screen and (max-width: 749px) {
-  header {
-    height: auto;
-    background-size: 650px;
-    background-position: top 20px left;
-    background-attachment: scroll;
-    /* background-clip: content-box; */
-  }
-  .header-content {
-    padding-top: 280px;
-  }
-  header h2 {
-    font-size: 30px;
-  }
-  h1 {
-    font-size: 75px;
-    line-height: 0.9;
-    margin-bottom: 20px;
-  }
-  h2 {
-    font-size: 35px;
-    line-height: 1;
-  }
-  .contact-list a {
-    padding: 5px;
-  }
+    header {
+        height: auto;
+        background-size: 650px;
+        background-position: top 20px left;
+        background-attachment: scroll;
+        /* background-clip: content-box; */
+    }
+    .header-content {
+        padding-top: 280px;
+    }
+    header h2 {
+        font-size: 30px;
+    }
+    h1 {
+        font-size: 75px;
+        line-height: 0.9;
+        margin-bottom: 20px;
+    }
+    h2 {
+        font-size: 35px;
+        line-height: 1;
+    }
+    .contact-list a {
+        padding: 5px;
+    }
 }
