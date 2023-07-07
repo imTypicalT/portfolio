@@ -2,9 +2,14 @@
     /* Color Palette */
     --white: #f7fff7;
     --dark-grey: #343434;
-    --dark-blue: #2f3061;
-    --yellow: #ffe66d;
+    --dark-blue: #536bb3;
+    --yellow: #eabe7c;
     --light-blue: #a1c6d7;
+    --grey: #aaaaaa;
+    --light-grey: #dddddd;
+    --mint: #1b9ba4;
+    --mint-gradient: linear-gradient(to left, #06bc9b, #1b9ba4);
+    --mint-gradient-flipped: linear-gradient(to left, #1b9ba4, #06bc9b);
 }
 
 /* Global Styles */
@@ -31,9 +36,13 @@ img {
     width: 300px;
 }
 
+p {
+    margin: 8px 0 8px 0;
+}
+
 a {
-    color: var(--yellow);
-    text-decoration: none;
+    color: var(--mint);
+    text-decoration: underline;
 }
 
 a:hover {
@@ -44,7 +53,7 @@ h1,
 h2 {
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
-    margin: 0;
+    margin: 0px;
 }
 
 h1 {
@@ -56,15 +65,15 @@ h2 {
     font-size: 45px;
 }
 
+h3 {
+    margin-bottom: 0px;
+}
+
 .content-wrap {
     max-width: 800px;
     width: 85%;
     margin: 0 auto;
     padding: 60px 0;
-}
-
-h3 {
-    margin-bottom: 0;
 }
 
 .item-details h3 + p {
@@ -84,34 +93,27 @@ h3 {
     border-bottom: none;
 }
 
-/* Profile */
+/* Header */
 header {
-    background: #aaaaaa;
+    background: var(--dark-grey);
     color: var(--white);
     height: auto;
-    padding-top: 300px;
+    /* padding-top: 300px; */
+}
+
+/* About */
+.skills {
+    display: flex;
+}
+.skills div {
+    margin: 0 auto 0 auto;
+    padding: 0 20px 0 20px;
+    justify-content: center;
 }
 
 /* Projects */
 .projects {
-    background: #ffffff;
-}
-
-.projects a {
-    color: var(--dark-blue);
-}
-
-.projects .btn {
-    color: var(--white);
-    background: var(--dark-blue);
-    text-decoration: none;
-    padding: 8px;
-    border-radius: 4px;
-    display: inline-block;
-}
-
-.projects .btn:hover {
-    background: rgba(47, 48, 97, 80%);
+    background: var(--light-grey);
 }
 
 .project-item {
@@ -122,51 +124,58 @@ header {
     margin-top: 0;
 }
 
-.project-item ul li {
-    display: inline;
-    padding-right: 10px;
+.project-languages {
+    font-style: italic;
+    font-size: 13px;
+}
+
+.btn {
+    color: var(--white);
+    background: var(--mint);
+    background-image: var(--mint-gradient);
+    text-decoration: none;
+    padding: 8px;
+    margin: 8px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.btn:hover {
+    color: var(--dark-grey);
+    background: #1b9ba4;
+    background-image: var(--mint-gradient-flipped);
 }
 
 /* Work Experience */
 .work-experience {
-    background: #dddddd;
+    background: var(--white);
 }
 
 /* Certifications */
 .certifications {
-    background-color: #dddddd;
-    background-size: cover;
-    background-position: top right;
-    padding-bottom: 100px;
+    background-color: var(--yellow);
+}
+.certifications a {
+    color: var(--dark-grey);
 }
 
-.certifications p {
-    width: 60%;
-    font-style: italic;
-}
-
-.certifications ul {
-    margin: 0;
-}
-
-.certifications h3 {
-    margin-top: 10px;
+.certifications ul li {
+    margin: 10px;
 }
 
 /* Contact Info */
 footer {
     background: var(--dark-grey);
     color: var(--white);
+    text-align: center;
 }
 
 .contact-list {
+    display: flex;
     list-style-type: none;
+    justify-content: center;
     padding: 0;
-}
-
-.contact-list a {
-    padding: 15px;
-    display: inline-block;
+    margin: 8px;
 }
 
 /* Responsive Styles */
@@ -205,17 +214,17 @@ footer {
 }
 
 /* Mobile View */
-@media screen and (max-width: 749px) {
+@media screen and (max-width: 550px) {
     header {
         height: auto;
-        background-size: 650px;
-        background-position: top 20px left;
-        background-attachment: scroll;
+        /* background-size: 650px; */
+        /* background-position: top 20px left; */
+        /* background-attachment: scroll; */
     }
 
-    .header-content {
+    /* .header-content {
         padding-top: 280px;
-    }
+    } */
 
     header h2 {
         font-size: 30px;
@@ -232,7 +241,17 @@ footer {
         line-height: 1;
     }
 
-    .contact-list a {
-        padding: 5px;
+    .skills {
+        flex-direction: column;
     }
+
+    .skills div {
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+        justify-content: left;
+    }
+
+    /* .contact-list a {
+        padding: 5px;
+    } */
 }
