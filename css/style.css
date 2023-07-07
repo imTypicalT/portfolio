@@ -1,5 +1,5 @@
-/* Color Palette */
 :root {
+    /* Color Palette */
     --white: #f7fff7;
     --dark-grey: #343434;
     --dark-blue: #2f3061;
@@ -33,10 +33,18 @@ img {
 
 a {
     color: var(--yellow);
+    text-decoration: none;
 }
 
 a:hover {
     text-decoration: none;
+}
+
+h1,
+h2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    margin: 0;
 }
 
 h1 {
@@ -46,13 +54,6 @@ h1 {
 
 h2 {
     font-size: 45px;
-}
-
-h1,
-h2 {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 700;
-    margin: 0;
 }
 
 .content-wrap {
@@ -88,9 +89,6 @@ header {
     background: #aaaaaa;
     color: var(--white);
     height: auto;
-}
-
-.header-content {
     padding-top: 300px;
 }
 
