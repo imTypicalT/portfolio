@@ -284,6 +284,7 @@ footer a:hover {
 /* Media Queries */
 @media screen and (max-width: 600px) {
   body{
+    width: 100vw;
     overflow: hidden;
   }
   .welcome-content > h1 {
