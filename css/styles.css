@@ -294,7 +294,6 @@ footer a:hover {
     flex-direction: column;
     text-align: left;
     font-size: 6rem;
-    padding: 0 4rem;
   }
   .welcome-content > h1 > span {
     font-size: 14rem;
