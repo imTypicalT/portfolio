@@ -22,6 +22,8 @@ html {
   box-sizing: border-box;
   scroll-behavior: smooth;
   font-size: 10px;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 
 body {
