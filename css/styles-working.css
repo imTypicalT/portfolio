@@ -25,6 +25,7 @@ html {
     font-size: 10px;
     overflow: scroll;
     -webkit-overflow-scrolling: touch;
+    scroll-padding-top: 4rem;
 }
 
 body {
@@ -44,7 +45,7 @@ body {
 
 h1,
 h2 {
-    font-family: "Raleway", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 700;
     text-align: center;
 }
@@ -94,14 +95,14 @@ img {
 .nav {
     width: 100vw;
     height: 60px;
-    background-color: var(--white);
+    background-color: var(--black);
     display: flex;
     justify-content: flex-end;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 10;
-    border-bottom: 3px solid var(--black);
+    /* border-bottom: 3px solid var(--black); */
 }
 
 .nav-list {
@@ -113,18 +114,21 @@ img {
 .nav-list a {
     font-size: 2.2rem;
     padding: 1rem;
-    color: var(--black);
+    border-radius: 3px;
+    color: var(--white);
     transition: 0.3s;
+    margin: 0.5rem;
 }
 .nav-list a:hover {
-    color: var(--green);
+    color: var(--black);
+    background-color: var(--white);
     transition: 0.3s;
 }
 .nav-list li {
     transition: 0.3s;
 }
 .nav-list li:hover {
-    transform: translate(0, -5px);
+    color: var(--white);
     transition: 0.3s;
 }
 
@@ -145,6 +149,11 @@ img {
     text-align: center;
     font-style: italic;
     color: var(--green);
+}
+
+.welcome-content h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
 }
 
 /* Welcome Animated Background */
@@ -175,7 +184,40 @@ img {
 }
 
 /* About Section */
-/* For Future Use */
+.about {
+    background-color: var(--black);
+    color: var(--white);
+    height: 100vh;
+}
+.about h2 {
+    margin-bottom: 4rem;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 6rem;
+    margin-right: 6rem;
+    /* grid-template-rows: 2fr 1fr; */
+}
+
+.profile-image {
+    border-radius: 50%;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.skills h3 {
+    margin-top: 2rem;
+}
+.skills ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.about-grid p {
+    text-align: left;
+}
 
 /* Project Section */
 .projects-section {
