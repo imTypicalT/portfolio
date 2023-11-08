@@ -140,7 +140,6 @@ img {
     align-items: center;
     width: 100vw;
     height: 100vh;
-    /* background: linear-gradient(0deg, var(--white) 70%, var(--light-grey) 100%); */
 }
 
 .welcome-content > p {
@@ -153,34 +152,34 @@ img {
 
 .welcome-content h1 {
     font-family: "Poppins", sans-serif;
-    font-weight: 500;
+    font-weight: 700;
 }
 
-/* Welcome Animated Background */
-.welcome-background-DISABLED {
-    position: fixed;
-    z-index: -1;
-    height: 300vh;
-    width: 200vw;
-    overflow: hidden;
-    background: linear-gradient(
-        135deg,
-        var(--lime),
-        var(--white),
-        var(--white)
-    );
-    background-position: center;
-    background-size: 125% 125%;
-    animation: bg-colors 20s ease-in-out 0s infinite running;
+/* Chevron Arrow */
+#chevron-arrow {
+    font-size: 4rem;
+    transition: 0.3s;
+    cursor: pointer;
+    color: var(--black);
+    background-color: var(--white);
+    padding: 1rem;
+    border-radius: 50%;
+}
+#chevron-arrow:hover {
+    transform: translateY(0px);
+    transition: 0.3s;
+    color: var(--white);
+    background-color: var(--black);
 }
 
-@keyframes bg-colors {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
+.fa-chevron-down {
+    transform: translateY(-5px);
+    position: relative;
+    bottom: -20rem;
+}
+
+.fa-chevron-up {
+    transform: translateY(5px);
 }
 
 /* About Section */
@@ -201,12 +200,15 @@ img {
     /* grid-template-rows: 2fr 1fr; */
 }
 
+/* Profile Image */
 .profile-image {
     border-radius: 50%;
-    max-width: 80%;
+    max-width: 50%;
     margin-left: auto;
     margin-right: auto;
 }
+
+/* Skills */
 .skills h3 {
     margin-top: 2rem;
 }
