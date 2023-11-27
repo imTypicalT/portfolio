@@ -25,6 +25,7 @@
         <!-- Navbar -->
         <nav id="navbar" class="nav">
             <ul class="nav-list">
+                <li><a href="#">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -40,56 +41,82 @@
                 <h1>Hello, I'm <span>Taylor</span></h1>
                 <p>a front-end web developer</p>
             </div>
-            <!-- TODO fix chevron href -->
             <a href="#about" target="_self">
                 <i id="chevron-arrow" class="fa-solid fa-chevron-down"></i>
             </a>
         </section>
         <!-- Welcome End -->
         <!-- About -->
-        <section id="about" class="about">
-            <div class="content-wrap">
-                <h2>About</h2>
-                <div class="about-grid">
-                    <div class="profile-info">
-                        <img class="profile-image" src="/images/Me 2.png" />
-                        <p>text</p>
+
+        <section class="about">
+            <h2 id="about">About</h2>
+            <div class="about-grid">
+                <div class="profile-info">
+                    <img class="profile-image" src="/images/Me 2.png" />
+                    <div class="profile-info-links">
+                        <a href="https://github.com/imTypicalT" target="_blank">
+                            <i class="fa-brands fa-github"></i
+                        ></a>
+                        <a
+                            href="https://www.freecodecamp.org/TypicalT"
+                            target="_blank"
+                            ><i class="fa-brands fa-free-code-camp"></i
+                        ></a>
+                        <a
+                            href="https://www.linkedin.com/in/taylorlawson303/"
+                            target="_blank"
+                            ><i class="fa-brands fa-linkedin"></i>
+                        </a>
                     </div>
-                    <div>
-                        <p>
-                            As a web developer with a passion for
-                            problem-solving, I bring a unique perspective to the
-                            tech world. Despite my background in the television
-                            and film industry as a grip, I have been honing my
-                            coding skills through various online courses and am
-                            now excited to launch my career as a developer.
-                            <br />
-                        </p>
-                        <section class="skills">
+                    <!-- <section class="skills">
                             <h3>Skills</h3>
                             <div>
                                 <ul>
-                                    <li>Python</li>
-                                    <li>JavaScript</li>
                                     <li>HTML/CSS</li>
+                                    <li>JavaScript</li>
                                     <li>Python</li>
-                                    <li>React Native</li>
                                     <li>SQL</li>
                                     <li>Affinity Photo/Design</li>
                                     <li>Photoshop</li>
                                     <li>Davinci Resolve</li>
-                                    <li>OBS</li>
+                                    <li>Open Broadcaster Software</li>
                                 </ul>
                             </div>
-                        </section>
-                    </div>
+                        </section> -->
+                </div>
+                <div>
+                    <p>
+                        Hey there, my name is Taylor! I come from a background
+                        in the TV & Film industry with 6 years working as a Grip
+                        on various TV shows and movies based in PDX and the
+                        surrounding areas. I’ve always had an affinity for
+                        computer technologies and design whether that’s in the
+                        form of graphic design, coding, or a combination of
+                        those, like video games. Since 2022 I have taken a step
+                        back from working in the Film industry to pursue my
+                        passion and teach myself the fundamentals of coding.
+                        <br />
+                        <br />
+                        I started with JavaScript but quickly realized that I
+                        enjoyed being able to work on the visual aspects of
+                        projects and started learning HTML and CSS in order to
+                        follow the path of becoming a front-end developer. I’ve
+                        taught myself everything I know through courses on
+                        LinkedIn Learning, freeCodeCamp, and various tutorials
+                        on YouTube. <br />
+                        <br />
+                        I’m always seeking to improve my skills as a developer
+                        and a graphic designer and look forward to documenting
+                        my achievements on this site!
+                        <br />
+                    </p>
                 </div>
             </div>
         </section>
         <!-- About End -->
         <!-- Projects -->
-        <section id="projects" class="projects-section">
-            <div class="projects-display">
+        <section class="projects-section">
+            <div id="projects" class="projects-display">
                 <h2 class="projects-header">Projects</h2>
                 <div class="projects-grid">
                     <!-- Project 1 -->
@@ -98,11 +125,15 @@
                         href="https://imtypicalt.github.io/fcc-product-landing-page"
                         target="_blank"
                     >
-                        <img
-                            class="project-image"
-                            src="https://github.com/imTypicalT/fcc-product-landing-page/raw/main/images/fcc-product-landing-page-.png"
-                            alt="simple documentation page for javascript"
-                        />
+                        <div class="image-wrapper">
+                            <img
+                                class="project-image"
+                                src="https://github.com/imTypicalT/fcc-product-landing-page/raw/main/images/fcc-product-landing-page-.png"
+                                alt="simple documentation page for javascript"
+                            />
+                            <!-- TODO add description -->
+                            <div class="project-desc">this is a test</div>
+                        </div>
                         <p class="project-title">
                             <span class="project-title-highlight"><</span>
                             Product Landing Page
@@ -116,11 +147,15 @@
                         href="https://imtypicalt.github.io/fcc-documentation-page"
                         target="_blank"
                     >
-                        <img
-                            class="project-image"
-                            src="https://github.com/imTypicalT/fcc-documentation-page/raw/main/images/Documentation-Page.png"
-                            alt="simple documentation page for javascript"
-                        />
+                        <div class="image-wrapper">
+                            <img
+                                class="project-image"
+                                src="https://github.com/imTypicalT/fcc-documentation-page/raw/main/images/Documentation-Page.png"
+                                alt="simple documentation page for javascript"
+                            />
+                            <!-- TODO add description -->
+                            <p class="project-desc">this is a test</p>
+                        </div>
                         <p class="project-title">
                             <span class="project-title-highlight"><</span>
                             Documentation Page
@@ -134,11 +169,15 @@
                         href="https://imtypicalt.github.io/fcc-tribute-page"
                         target="_blank"
                     >
-                        <img
-                            class="project-image"
-                            src="https://github.com/imTypicalT/fcc-tribute-page/raw/main/images/imtypicalt-github-io-fcc-tribute-page-.png"
-                            alt="a tribute page for capybaras"
-                        />
+                        <div class="image-wrapper">
+                            <img
+                                class="project-image"
+                                src="https://github.com/imTypicalT/fcc-tribute-page/raw/main/images/imtypicalt-github-io-fcc-tribute-page-.png"
+                                alt="a tribute page for capybaras"
+                            />
+                            <!-- TODO add description -->
+                            <p class="project-desc">this is a test</p>
+                        </div>
                         <p class="project-title">
                             <span class="project-title-highlight"><</span>
                             Tribute Page
@@ -152,11 +191,15 @@
                         href="https://imtypicalt.github.io/fcc-survey-form"
                         target="_blank"
                     >
-                        <img
-                            class="project-image"
-                            src="https://github.com/imTypicalT/fcc-survey-form/raw/main/images/Survey-Form-Build-a-Survey-Form-freeCodeCamp-org.png"
-                            alt="design of a survey form"
-                        />
+                        <div class="image-wrapper">
+                            <img
+                                class="project-image"
+                                src="https://github.com/imTypicalT/fcc-survey-form/raw/main/images/Survey-Form-Build-a-Survey-Form-freeCodeCamp-org.png"
+                                alt="design of a survey form"
+                            />
+                            <!-- TODO add description -->
+                            <p class="project-desc">this is a test</p>
+                        </div>
                         <p class="project-title">
                             <span class="project-title-highlight"><</span>
                             Survey Form
@@ -170,11 +213,15 @@
                         href="https://imtypicalt.github.io/frontend-mentor-qr-code-component"
                         target="_blank"
                     >
-                        <img
-                            class="project-image"
-                            src="https://imtypicalt.github.io/portfolio/images/qr-code-screenshot.png"
-                            alt="design of a qr code"
-                        />
+                        <div class="image-wrapper">
+                            <img
+                                class="project-image"
+                                src="https://imtypicalt.github.io/portfolio/images/qr-code-screenshot.png"
+                                alt="design of a qr code"
+                            />
+                            <!-- TODO add description -->
+                            <p class="project-desc">this is a test</p>
+                        </div>
                         <p class="project-title">
                             <span class="project-title-highlight"><</span>
                             QR Code Component
@@ -188,11 +235,15 @@
                         href="https://replit.com/@TypicalT/IdleClicker?v=1"
                         target="_blank"
                     >
-                        <img
-                            class="project-image"
-                            src="https://imtypicalt.github.io/portfolio/images/project-IdleClicker.png"
-                            alt="idleclicker project"
-                        />
+                        <div class="image-wrapper">
+                            <img
+                                class="project-image"
+                                src="https://imtypicalt.github.io/portfolio/images/project-IdleClicker.png"
+                                alt="idleclicker project"
+                            />
+                            <!-- TODO add description -->
+                            <p class="project-desc">this is a test</p>
+                        </div>
                         <p class="project-title">
                             <span class="project-title-highlight"><</span>
                             IdleClicker
@@ -243,11 +294,7 @@
         </a>
         <!-- Contact End -->
         <footer>
-            <p>Published 8-31-2023</p>
-            <p>
-                Designed as part of the Responsive Web Design course via
-                <a href="https://www.freecodecamp.org/">freeCodeCamp</a>.
-            </p>
+            <p>© 2023 - Taylor Lawson Portfolio</p>
         </footer>
     </body>
 </html>
