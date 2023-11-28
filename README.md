@@ -1,10 +1,11 @@
 # Web dev portfolio site
 
-This is site is used as a personal portfolio to document various coding projects I've worked on.
+This site is used as a personal portfolio to document various coding projects I've worked on.
 
 ## Table of contents
 
 -   [Overview](#overview)
+    -   [About](#about)
     -   [Screenshot](#screenshot)
     -   [Links](#links)
 
@@ -16,8 +17,12 @@ This site began as the final projecet for freeCodeCamp's [Responsive Web Design]
 
 ### Screenshot
 
-<img src="./images/Website-Template.png" width="200">
-This is a mockup design I created in Affinity Photo to better visualize what I wanted the main desktop view of my redesign to look like.
+Here is the mockup design I created in Affinity Photo to better visualize how I wanted the main desktop view to look.
+
+<details>
+<summary>View Image</summary>
+<img src="./images/Website-Template.png" width="500">
+</details>
 
 ### Links
 
