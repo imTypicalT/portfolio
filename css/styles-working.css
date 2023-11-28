@@ -146,7 +146,7 @@ img {
     /* clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); */
 }
 
-.welcome-content > p {
+.welcome-content p {
     font-weight: 200;
     font-size: 3rem;
     text-align: center;
@@ -158,8 +158,50 @@ img {
     font-family: "Poppins", sans-serif;
     font-weight: 700;
 }
+/* TODO Fix Rotate */
+/* Rotating Text */
+/* .rotating-text {
+    position: relative;
+    overflow: hidden;
+    height: 24px; 
+}
+
+.slide-up {
+    animation: slideUp 1s forwards;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(24px); 
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+.slide-down {
+    animation: slideDown 1s forwards;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(
+            -24px
+        ); 
+    }
+} */
 
 /* Chevron Arrow */
+.welcome-section a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: -20rem;
+}
 #chevron-arrow {
     font-size: 4rem;
     transition: 0.3s;
@@ -175,13 +217,9 @@ img {
     color: var(--white);
     background-color: var(--black);
 }
-
 .fa-chevron-down {
     transform: translateY(-5px);
-    position: relative;
-    bottom: -20rem;
 }
-
 .fa-chevron-up {
     transform: translateY(5px);
 }
