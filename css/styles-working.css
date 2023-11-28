@@ -125,13 +125,13 @@ img {
     background-color: var(--white);
     transition: 0.3s;
 }
-.nav-list li {
+/* .nav-list li {
     transition: 0.3s;
-}
-.nav-list li:hover {
+} */
+/* .nav-list li:hover {
     color: var(--white);
     transition: 0.3s;
-}
+} */
 
 /* Welcome Section */
 .welcome-section {
@@ -314,8 +314,7 @@ img {
 }
 .project-tile:hover .project-image {
     transform: scale(1.1);
-    filter: blur(2px);
-    /* transition: 0.3s; */
+    /* filter: blur(2px); */
 }
 /* Project description over image */
 /* TODO implement after adding text in .html*/
@@ -379,19 +378,25 @@ img {
 
 /* Footer */
 footer {
-    margin-top: 4rem;
+    margin: 4rem 0 1rem 0;
     font-size: 1.4rem;
     color: var(--white);
 }
-/* footer a {
-    color: var(--black);
+footer a {
+    color: var(--white);
+    padding: 0.4rem;
+    border-radius: 3px;
     text-decoration: underline;
     transition: 0.3s;
-} */
-/* footer a:hover {
-    color: var(--green);
+}
+footer a:hover {
+    color: var(--black);
+    background-color: var(--white);
     transition: 0.3s;
-} */
+}
+footer p {
+    margin-top: 1rem;
+}
 
 /* Media Queries */
 @media screen and (max-width: 600px) {
