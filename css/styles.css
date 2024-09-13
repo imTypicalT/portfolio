@@ -287,13 +287,14 @@ img {
 }
 .project-tile {
     margin: 2rem;
-    border-radius: 10px;
+    border-radius: 1rem;
     max-height: 350px;
     min-height: 350px;
     max-width: 350px;
     min-width: 350px;
     background-color: var(--black);
     transition: 0.3s;
+    box-shadow: 1rem 1rem rgba(0, 0, 0, 0.5);
 }
 .project-tile:hover {
     letter-spacing: 1px;
@@ -305,7 +306,7 @@ img {
     position: relative;
     object-fit: cover;
     overflow: hidden;
-    border-radius: 10px 10px 0 0;
+    border-radius: 1rem 1rem 0 0;
 }
 /* Zoom + Blur image on hover */
 .project-image {
